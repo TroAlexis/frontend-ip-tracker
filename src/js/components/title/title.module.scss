@@ -1,0 +1,12 @@
+@import '~Scss/utils/global';
+
+$title-color: #fff;
+$title-font-size: rem(35px);
+
+.main-title {
+	color: $title-color;
+	font-weight: 500;
+
+	font-size: $title-font-size;
+	text-align: center;
+}

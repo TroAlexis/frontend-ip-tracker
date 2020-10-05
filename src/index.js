@@ -1,10 +1,11 @@
-// WEBPACK ENTRY FILE MAIN
+import React from 'react';
+import { render } from 'react-dom';
 
-// JS
-import './js';
+import App from 'Components/App/App';
 
-// SCSS
-import 'Scss/shared.scss';
+const wrapper = document.querySelector('.root');
+
+render(pug`App`, wrapper);
 
 if (module.hot) {
   module.hot.accept();

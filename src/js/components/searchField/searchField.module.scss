@@ -1,0 +1,53 @@
+@import '~Scss/utils/global';
+
+$field-height: rem(50px);
+$field-border-radius: rem(10px);
+
+$input-padding: 20px;
+
+$button-width: rem(55px);
+$button-color: #000;
+
+.search-field {
+	display: flex;
+	height: $field-height;
+	overflow: hidden;
+
+	border-radius: $field-border-radius;
+	box-shadow: rem(5px) rem(5px) rem(5px) rem(1px) rgba(0, 0, 0, 0.3);
+
+	&__input {
+		flex: 1 1 auto;
+
+		font-weight: 400;
+		font-family: Rubik, sans-serif;
+		padding: {
+			right: $input-padding;
+			left: $input-padding;
+		};
+
+		&::placeholder {
+			color: rgba(0, 0, 0, 0.3);
+		}
+
+	}
+
+	&__button {
+		flex: 0 1 $button-width;
+		width: $button-width;
+		background: {
+			image: url('~Images/icons/icon-arrow.svg');
+
+			position: center center;
+			repeat: no-repeat;
+
+			color: $button-color;
+		};
+
+		&:hover,
+		&:active,
+		&:focus {
+			background-color: $color-font--main;
+		}
+	}
+}

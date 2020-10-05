@@ -16,7 +16,7 @@
 
 // MEDIA QUERIES MIXINS
 @mixin media($width) {
-	@media (max-width: $width) {
+	@media only screen and (max-width: $width) {
 		@content; }
 }
 

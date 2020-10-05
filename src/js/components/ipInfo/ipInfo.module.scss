@@ -1,0 +1,60 @@
+@import '~Scss/utils/global';
+
+$ip-info-padding: rem(20px);
+
+$block-gap: -1 * rem(6px);
+
+
+.ip-info {
+
+	padding: $ip-info-padding;
+
+	background-color: #fff;
+
+	border-radius: rem(15px);
+}
+
+.wrapper {
+	display: flex;
+	width: 100%;
+	margin: $block-gap;
+	@include media(1270px) {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	@include media(700px) {
+		text-align: center;
+	}
+}
+
+.block {
+	display: flex;
+	flex: 0 1 25%;
+	flex-direction: column;
+	width: 25%;
+	margin: $block-gap * -1;
+	@include media(1270px) {
+		flex: 0 1 42%;
+		width: 42%;
+	}
+	@include media(700px) {
+		flex: 0 1 100%;
+		width: 100%;
+	}
+}
+
+.heading {
+	margin-bottom: rem(16px);
+
+	color: $color-font--secondary;
+	font-weight: 500;
+	font-size: rem(13px);
+	letter-spacing: rem(1.5px);
+	text-transform: uppercase;
+}
+
+.data {
+	color: $color-font--main;
+	font-weight: 500;
+	font-size: rem(30px);
+}
