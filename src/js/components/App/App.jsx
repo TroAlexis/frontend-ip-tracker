@@ -59,7 +59,7 @@ export default class App extends Component {
           
           SearchField(placeholder="Search for any IP address or domain", clickHandler=this.handleClick, styleName="search")
           
-          IpInfo(ipData=this.state.ipData, styleName="results")
+          IpInfo(ipData=ipData, styleName="results")
       
         .map
           MyMap(lat=ipData.location && ipData.location.lat lng=ipData.location && ipData.location.lng zoom=14)
